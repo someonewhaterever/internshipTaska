@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>To-Do List</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <h2>To-Do List</h2>
+        <div class="task-input">
+            <input type="text" id="taskInput" placeholder="Введите задачу...">
+            <input type="datetime-local" id="taskDate">
+            <select id="taskPriority">
+                <option value="low">Низкий</option>
+                <option value="medium">Средний</option>
+                <option value="high">Высокий</option>
+            </select>
+            <button onclick="addTask()">Добавить</button>
+        </div>
+        <h3>Текущие задачи</h3>
+        <ul id="taskList"></ul>
+        <h3>Выполненные задачи</h3>
+        <ul id="completedTasks"></ul>
+    </div>
+    
+    <script src="app.js"></script>
+</body>
+</html>
